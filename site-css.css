@@ -99,6 +99,7 @@ menu>div>ul{
 @media screen and (max-width:1000px){
     a>#menul{
         display: block;
+        height: 40px;
     }
     menu{
         display: none;
@@ -108,8 +109,8 @@ menu>div>ul{
     }
     #logo>a>img{
         position: relative;
-        bottom: 65px;
-        height: 100px;
+        bottom: 35px;
+        height: 60px;
         
     }
     header{
