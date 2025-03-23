@@ -1,0 +1,109 @@
+@charset "UTF-8";
+:root{
+    --cor1:#41F08F;
+    --cor2:#5AAD80;
+    --cor3:#4F705E;
+    --cor4:#303D36;
+
+}
+*{
+    margin: 0px;
+    padding: 0px;
+}
+header{
+    background-color: white;
+    height: 220px;
+    position: relative;
+    border-bottom: solid #006dc6;
+    
+}
+a>#menul{
+    display: none;
+    position: absolute;
+    top: 0px;
+    background-color: #006dc6;
+    cursor: pointer;
+}
+#logo{
+    text-align: center;
+    position: relative;
+    bottom: 20px;
+    
+    
+}
+menu{
+    position: absolute;
+    display:flex ;
+    bottom: 8px;
+    
+}
+menu>div>a{
+    text-decoration: none;
+    border-radius: 5px;
+    padding: 3px;
+    margin: 0px 5px;
+    background-color: #006dc6;
+    color: rgb(0, 0, 0);
+}
+menu>div>a:hover{
+    background-color: #003e70;
+    color: white;
+    transition-duration: 0.2s;
+}
+menu>div>ul{
+    display: none;
+    list-style-position: inside;
+    margin: 3px 5px;
+    background-color: #ffffff;
+    position: absolute;
+    width: 200px;
+    padding: 4px;
+}
+#subcat:hover>ul{
+    display: block;
+}
+#subwhey:hover>ul{
+    display: block;
+}
+#subcre:hover>ul{
+    display: block;
+}
+#subhip:hover>ul{
+    display: block;
+}
+#suboutros:hover>ul{
+    display: block;
+}
+@media screen and (max-width:800px){
+    a>#menul{
+        display: block;
+    }
+    menu{
+        display: none;
+    }
+}
+#marcas{
+    text-align: center;
+    top: 0px;
+    padding: 10px;
+    width: 250px;
+    position: absolute;
+    right: 0px;
+}
+#catmarca>h1{
+    background-color: #006dc6;
+    text-align: center;
+
+}
+#catmarca{
+    text-align: center;
+    
+}
+#catmarca>a>img{
+    margin: 10px;
+    border: solid black;
+}
+#catmarca>a>img:hover{
+    width: 180px;
+    animation-duration: 3s;
+}
