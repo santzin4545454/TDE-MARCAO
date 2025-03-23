@@ -1,4 +1,7 @@
 @charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap');
+
 :root{
     --cor1:#41F08F;
     --cor2:#5AAD80;
@@ -6,20 +9,36 @@
     --cor4:#303D36;
 
 }
+body{
+    font-family: "Orbitron", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+  
+}
 *{
     margin: 0px;
     padding: 0px;
 }
+
 header{
     background-color: white;
     height: 220px;
     position: relative;
     border-bottom: solid #006dc6;
     
+    
+}
+#frase{
+    padding: 5px;
+    color: white;
+    text-align: center;
+    font-size: 0.4em;
+    background-color: rgb(43, 43, 43);
 }
 a>#menul{
     display: none;
-    position: absolute;
+    position: relative;
     top: 0px;
     background-color: #006dc6;
     cursor: pointer;
@@ -27,9 +46,10 @@ a>#menul{
 #logo{
     text-align: center;
     position: relative;
-    bottom: 20px;
-    
-    
+    top: 20px;   
+}
+#logo>a>img{
+    background-color: 
 }
 menu{
     position: absolute;
@@ -37,6 +57,8 @@ menu{
     bottom: 8px;
     
 }
+
+
 menu>div>a{
     text-decoration: none;
     border-radius: 5px;
@@ -74,22 +96,31 @@ menu>div>ul{
 #suboutros:hover>ul{
     display: block;
 }
-@media screen and (max-width:800px){
+@media screen and (max-width:1000px){
     a>#menul{
         display: block;
     }
     menu{
         display: none;
     }
+    #marcas{
+        display: none;
+    }
+    #logo>a>img{
+        position: relative;
+        bottom: 65px;
+        height: 100px;
+        
+    }
+    header{
+        height: 140px;
+    }
+   
 }
-#marcas{
-    text-align: center;
-    top: 0px;
-    padding: 10px;
-    width: 250px;
-    position: absolute;
-    right: 0px;
-}
+
+
+
+
 #catmarca>h1{
     background-color: #006dc6;
     text-align: center;
